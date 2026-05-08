@@ -9,7 +9,7 @@ spec:
   - key: argocd-health
   environments:
     - autoMerge: true
-      branch: environment/development
+      branch: environment/dev
     - autoMerge: true
       branch: environment/staging
     - autoMerge: false
