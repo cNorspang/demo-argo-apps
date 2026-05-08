@@ -6,7 +6,7 @@ metadata:
 spec:
   github:
     owner: cNorspang
-    name: argocd-example-apps
+    name: demo-argo-apps
   scmProviderRef:
     kind: ClusterScmProvider
     name: github
