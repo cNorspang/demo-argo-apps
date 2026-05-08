@@ -1,0 +1,12 @@
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: GitRepository
+metadata:
+  name: github-argocd-example-apps
+  namespace: promoter-system 
+spec:
+  github:
+    owner: cNorspang
+    name: argocd-example-apps
+  scmProviderRef:
+    kind: ClusterScmProvider
+    name: github

@@ -1,0 +1,9 @@
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: ClusterScmProvider
+metadata:
+  name: github
+spec:
+  secretRef:
+    name: github-app-promoter
+  github:
+    appID: 3617473
