@@ -7367,4 +7367,4 @@ spec:
     - autoMerge: false
       branch: environment/prod
   gitRepositoryRef:
-    name: github-argocd-example-apps
+    name: github-demo-argo-apps
