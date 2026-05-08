@@ -5,7 +5,7 @@ metadata:
   labels:
     app: example-app-{{ .Values.environment }}
 spec:
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 0
   selector:
     matchLabels:
