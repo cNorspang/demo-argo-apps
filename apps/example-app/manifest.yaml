@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: example-app-
-  name: example-app-
+    app: example-app-development
+  name: example-app-development
 spec:
   replicas: 1
   revisionHistoryLimit: 0
   selector:
     matchLabels:
-      app: example-app-
+      app: example-app-development
   template:
     metadata:
       labels:
-        app: example-app-
+        app: example-app-development
     spec:
       containers:
         - image: gcr.io/google-samples/gb-frontend:v5

@@ -1,7 +1,7 @@
 {
   "repoURL": "https://github.com/cNorspang/demo-argo-apps",
-  "drySha": "8370a020f78070d72daf199717100b384d03d0c2",
+  "drySha": "4bde3999d7f0c17693070891576f0baa649712a1",
   "commands": [
-    "helm template . --name-template example-app --namespace cloud --include-crds"
+    "helm template . --name-template example-app --namespace cloud --values ./apps/example-app/values/development.yaml --include-crds"
   ]
 }
