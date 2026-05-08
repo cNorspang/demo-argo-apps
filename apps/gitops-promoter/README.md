@@ -5,6 +5,6 @@ To hydrate the manifests in this repository, run the following commands:
 ```shell
 git clone https://github.com/cNorspang/demo-argo-apps
 # cd into the cloned directory
-git checkout ec7a257510cb094314a860eb24d93c8ab266ac4c
+git checkout 54afe3fa3b7de9f8f15cfb3ee5f02b669d301727
 helm template . --name-template gitops-promoter --namespace promoter-system --include-crds
 ```
