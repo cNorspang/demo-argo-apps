@@ -17,7 +17,7 @@ spec:
       targetRevision: HEAD
       helm:
         valuesFiles:
-          values/development.yaml
+          - values/development.yaml
     syncSource:
       targetBranch: environment/dev
       path: apps/example-app
