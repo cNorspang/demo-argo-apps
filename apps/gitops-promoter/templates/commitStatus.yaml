@@ -9,3 +9,4 @@ spec:
   applicationSelector:
     matchLabels:
       use-promoter: "true"
+      environment: {{ .Values.environment }}

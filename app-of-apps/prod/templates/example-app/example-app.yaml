@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
   labels:
     use-promoter: "true"
+    environment: production
 spec:
   project: default
   destination:

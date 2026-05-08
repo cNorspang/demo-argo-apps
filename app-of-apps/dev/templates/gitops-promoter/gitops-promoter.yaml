@@ -13,6 +13,9 @@ spec:
       repoURL: https://github.com/cNorspang/demo-argo-apps
       path: apps/gitops-promoter
       targetRevision: HEAD
+      helm:
+        valueFiles:
+          - values/development.yaml
     syncSource:
       targetBranch: environment/dev
       path: apps/gitops-promoter
