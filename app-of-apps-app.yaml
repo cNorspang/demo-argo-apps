@@ -13,6 +13,6 @@ spec:
       prune: true
       selfHeal: true
   source:
-    path: app-of-apps/staging
+    path: app-of-apps/prod
     repoURL: https://github.com/cNorspang/demo-argo-apps
     targetRevision: main

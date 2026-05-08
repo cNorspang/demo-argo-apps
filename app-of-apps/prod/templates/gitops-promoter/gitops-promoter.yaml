@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-promoter
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    name: "in-cluster"
+    namespace: promoter-system
+  sourceHydrator:
+    drySource:
+      repoURL: https://github.com/cNorspang/demo-argo-apps
+      path: apps/gitops-promoter
+      targetRevision: HEAD
+    syncSource:
+      targetBranch: environment/prod
+      path: apps/gitops-promoter
+    hydrateTo:
+      targetBranch: environment/prod-next
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
