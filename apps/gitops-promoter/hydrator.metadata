@@ -1,7 +1,7 @@
 {
   "repoURL": "https://github.com/cNorspang/demo-argo-apps",
-  "drySha": "3d7fe4c2bdb3692ee16ded482f0e7b03112f3f4c",
+  "drySha": "54afe3fa3b7de9f8f15cfb3ee5f02b669d301727",
   "commands": [
-    "helm template . --name-template gitops-promoter --namespace promoter-system --include-crds"
+    "helm template . --name-template gitops-promoter --namespace promoter-system --values ./apps/gitops-promoter/values/development.yaml --include-crds"
   ]
 }

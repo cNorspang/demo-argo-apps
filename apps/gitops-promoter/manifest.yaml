@@ -7203,6 +7203,7 @@ metadata:
 spec:
   applicationSelector:
     matchLabels:
+      environment: development
       use-promoter: "true"
   promotionStrategyRef:
     name: demo-github
