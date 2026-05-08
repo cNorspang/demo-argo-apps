@@ -1,7 +1,7 @@
 {
   "repoURL": "https://github.com/cNorspang/demo-argo-apps",
-  "drySha": "4e2142136b3f32818a11f44a593f61c3b3cb11e9",
+  "drySha": "54afe3fa3b7de9f8f15cfb3ee5f02b669d301727",
   "author": "Casper Norspang <cbn@targit.com>",
-  "date": "2026-05-08T12:06:47Z",
-  "subject": "Bump replicas"
+  "date": "2026-05-08T12:29:53Z",
+  "subject": "Fix"
 }
