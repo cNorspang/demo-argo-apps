@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-app-{{ .Values.environment }}
+  labels:
+    app: example-app-{{ .Values.environment }}
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: example-app-{{ .Values.environment }}
+  template:
+    metadata:
+      labels:
+        app: example-app-{{ .Values.environment }}
+    spec:
+      containers:
+        - name: example-app
+          image: "gcr.io/google-samples/gb-frontend:v5"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http

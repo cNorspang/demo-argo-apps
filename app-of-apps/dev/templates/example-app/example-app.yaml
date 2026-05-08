@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: example-app
+  namespace: argocd
+  labels:
+    use-promoter: true
+spec:
+  project: default
+  destination:
+    name: "in-cluster"
+    namespace: cloud
+  sourceHydrator:
+    drySource:
+      repoURL: https://github.com/cNorspang/demo-argo-apps
+      path: apps/example-app
+      targetRevision: HEAD
+      helm:
+        valuesFiles:
+          values/development.yaml
+    syncSource:
+      targetBranch: environment/dev
+      path: apps/example-app
+    hydrateTo:
+      targetBranch: environment/dev-next
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
