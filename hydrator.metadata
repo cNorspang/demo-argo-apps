@@ -1,7 +1,7 @@
 {
   "repoURL": "https://github.com/cNorspang/demo-argo-apps",
-  "drySha": "4bde3999d7f0c17693070891576f0baa649712a1",
+  "drySha": "a3504ebf3fc40bc709d97de7e6ca299d2af8056d",
   "author": "Casper Norspang <cbn@targit.com>",
-  "date": "2026-05-08T09:53:08Z",
-  "subject": "more fix"
+  "date": "2026-05-08T10:41:14Z",
+  "subject": "Fix"
 }

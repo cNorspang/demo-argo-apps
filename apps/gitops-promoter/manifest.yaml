@@ -7345,7 +7345,7 @@ metadata:
   namespace: promoter-system
 spec:
   github:
-    name: argocd-example-apps
+    name: demo-argo-apps
     owner: cNorspang
   scmProviderRef:
     kind: ClusterScmProvider
